@@ -65,7 +65,7 @@ if (isset($_POST['signup'])) {
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <link rel="stylesheet" href="assets/styleTWt.css">
+      <link rel="stylesheet" href="assets/login-home/css/index_style.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -98,6 +98,8 @@ if (isset($_POST['signup'])) {
                         <button type="button" id="auto" class="signup-btn pri-btn" data-toggle="modal" data-target="#exampleModalCenter">
     Sign Up
 </button>
+                        <span class="join">or login as <a href="guest/index.php" style="text-decoration: none; color: #1da1f2">Guest</a>.</span>
+
                             <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
