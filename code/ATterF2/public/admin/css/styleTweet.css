@@ -1,0 +1,24 @@
+.box-user {
+	position: fixed;
+	right: 0;
+	bottom: 10px;
+	left: 60px; }
+
+.img-user {
+      height: 39px;
+      width: 39px;
+      border-radius: 50px;
+        }
+        .box-user {
+            position: fixed;
+            right: 0;
+            bottom: 10px;
+            left: 60px;
+            
+        }
+        .grid-user {
+            display: grid;
+            grid-template-columns: 4% 12.5% 2%;
+            
+        }
+        
