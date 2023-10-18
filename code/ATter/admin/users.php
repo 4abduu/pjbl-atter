@@ -4,17 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../assets/css/styles.min.css" />
-  <link rel="stylesheet" href="../assets/css/styleTweet.css" />
+  <link rel="stylesheet" href="../../assets/admin/css/styles.min.css" />
+  <link rel="stylesheet" href="../../assets/admin/css/styleTweet.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-  <link rel="icon" href="../assets/images/logo.jpg">
+  <link rel="icon" href="../../assets/admin/images/logo.jpg">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
-  <title>Admin - Users</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <title>Admin - Dashboard</title>
 </head>
 
 <body>
-  <!--  Body Wrapper -->
+      <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
     <!-- Sidebar Start -->
@@ -24,7 +26,7 @@
         <div>
           <div class="brand-logo d-flex align-items-center justify-content-between">
             <a href="./dashboard.html" class="text-nowrap logo-img">
-              <img src="../assets/images/logo.jpg" alt="logo" width="30" >
+              <img src="../../assets/admin/images/logo.jpg" alt="logo" width="30" >
             </a>
             <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
               <i class="ti ti-x fs-8"></i>
@@ -34,7 +36,7 @@
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
           <ul id="sidebarnav">
             <li class="sidebar-item">
-              <a class="sidebar-link" href="index.php" aria-expanded="false">
+              <a class="sidebar-link" href="home.php" aria-expanded="false">
                 <span>
                 <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g fill="#292d32"><path d="m17.5999 22.5601h-11.20005c-1.82001 0-3.48-1.4-3.78-3.2l-1.33001-7.96c-.21-1.24.39001-2.82999 1.38001-3.61999l6.93001-5.55005c1.34004-1.08 3.44994-1.06999 4.79994.01001l6.9301 5.54004c.98.79 1.58 2.37999 1.38 3.61999l-1.33 7.96c-.3 1.77-1.99 3.2-3.78 3.2zm-5.61-19.62002c-.53 0-1.0601.15997-1.4501.46997l-6.92995 5.55005c-.57.46-.95999 1.48-.83999 2.2l1.33 7.96c.18 1.05 1.22998 1.94 2.29999 1.94h11.20005c1.07 0 2.1199-.89 2.2999-1.95l1.33-7.96c.12-.72-.2799-1.75001-.8399-2.20001l-6.93-5.54004c-.4-.31-.93-.46997-1.47-.46997z"/><path d="m12 16.25c-1.79 0-3.25-1.46-3.25-3.25s1.46-3.25 3.25-3.25 3.25 1.46 3.25 3.25-1.46 3.25-3.25 3.25zm0-5c-.96 0-1.75.79-1.75 1.75s.79 1.75 1.75 1.75 1.75-.79 1.75-1.75-.79-1.75-1.75-1.75z"/></g></svg>
                 </span>
@@ -49,7 +51,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="coment.php" aria-expanded="false">
+              <a class="sidebar-link" href="comment.php" aria-expanded="false">
                 <span>
                 <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m5.7898124 15.0400458c.13241276-.0378323.27456678-.0193769.39292951.0510126.99547255.5920005 2.13255715.9089416 3.31725809.9089416 3.5898509 0 6.5-2.9101491 6.5-6.5 0-3.58985087-2.9101491-6.5-6.5-6.5-3.58985087 0-6.5 2.91014913-6.5 6.5 0 1.1847009.31694108 2.3217855.90894164 3.3172581.07038949.1183627.08884483.2605167.05101261.3929295l-.73194326 2.5618014zm10.888888-7.71857983c3.1301578.94810663 5.3212996 3.84682143 5.3212996 7.17853403 0 1.291292-.3272163 2.5357461-.9403562 3.6387259l.9211182 3.2239135c.1077645.377176-.2409466.7258871-.6181226.6181226l-3.2239135-.9211182c-1.1029798.6131399-2.3474339.9403562-3.6387259.9403562-3.3285064 0-6.22883281-2.1873547-7.17854188-5.3213898-.50707063-.1536643-.99614767-.3610114-1.46018399-.6189664l-3.22391357.9211182c-.37717594.1077645-.72588709-.2409466-.61812253-.6181226l.92111816-3.2239135c-.61313986-1.1029798-.94035619-2.3474339-.94035619-3.6387259 0-4.14213562 3.35786438-7.5 7.5-7.5 3.3844665 0 6.2453349 2.24179021 7.1787004 5.32146597zm.250999 1.1473973c.0463503.33708482.0703006.68131383.0703006 1.03113673 0 4.1421356-3.3578644 7.5-7.5 7.5-.34771062 0-.6920251-.0237259-1.03109572-.0703714.9752836 2.4229534 3.34211712 4.0703714 6.03109572 4.0703714 1.1847009 0 2.3217855-.3169411 3.3172581-.9089416.1183627-.0703895.2605167-.0888449.3929295-.0510126l2.5618014.7319432-.7319432-2.5618014c-.0378323-.1324128-.0193769-.2745668.0510126-.3929295.5920005-.9954726.9089416-2.1325572.9089416-3.3172581 0-2.6913466-1.6500462-5.05700561-4.0703006-6.03113673z"/></svg>                </span>
                 <span class="hide-menu">Comments</span>
@@ -63,7 +65,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="../logout.php" aria-expanded="false">
+              <a class="sidebar-link" href="../../includes/logout.php" aria-expanded="false">
                 <span>
                 <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 13v-2h-9v-3l-5 4 5 4v-3z"/><path d="m20 3h-9c-1.103 0-2 .897-2 2v4h2v-4h9v14h-9v-4h-2v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2v-14c0-1.103-.897-2-2-2z"/></svg>                </span>
                 <span class="hide-menu">Log out</span>
@@ -74,7 +76,7 @@
             <div class="grid-user">
               <div>
                 <img
-                  src="../assets/images/default.jpg" alt="user" class="img-user" 
+                  src="../../assets/admin/images/default.jpg" alt="user" class="img-user" 
                 />
               </div>
               <div>
@@ -86,56 +88,90 @@
         </nav>
       </div>
     </aside>
-    <!--  Sidebar End -->
-    <!--  Main wrapper -->
-    <div class="body-wrapper">
-      <!--  Header Start -->
-      <header class="app-header">
-
-      </header>
-      <!--  Header End -->
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-lg-12">
-            <h2 class="fw-bold">Users</h2>
-            <p class="text-primary">total data : 1  </p>
-          </div>
+<div class="body-wrapper">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-lg-12">
+        <h2 class="fw-bold">Users</h2>
+        <p class="text-primary">total data : 1  </p>
       </div>
-      <div class="container-fluid">
-        <div class="card">
-          <div class="card-body">
-            <table id="myTable" class="display">
-              <thead>
-                  <tr>
-                      <th>No</th>
-                      <th>Fullname</th>
-                      <th>Username</th>
-                      <th>Email</th>
-                      <th>Password</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>1</td>
-                      <td>Ichwan</td>
-                      <td>Ichwan rental</td>
-                      <td>Icwan@gmail.com</td>
-                      <td>ichwan123</td>
-                  </tr>
-              </tbody>
-          </table>
-          </div>
-        </div>
+  </div>
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-body">
+        <table id="myTable" class="display" >
+          <thead>
+              <tr>
+                  <th>No</th>
+                  <th>Fullname</th>
+                  <th>Username</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                  <th>Image</th>
+                  <th>Img Cover</th>
+                  <th>Bio</th>
+                  <th>Location</th>
+                  <th>Website</th>
+                  <th>Aksi</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Super Admin</td>
+                  <td>superadmin</td>
+                  <td>superadmin@gmail.com</td>
+                  <td>ac497cfaba23c4184cb03b97e8c51e0a</td>
+                  <td>default.jpg</td>
+                  <td>cover.png</td>
+                  <td>Anjay</td>
+                  <td>Malang</td>
+                  <td>www.youtube.com</td>
+                  <td>Hapus Edit</td>
+              </tr><tr>
+                  <td>2</td>
+                  <td>Super Admin</td>
+                  <td>superadmin</td>
+                  <td>superadmin@gmail.com</td>
+                  <td>ac497cfaba23c4184cb03b97e8c51e0a</td>
+                  <td>default.jpg</td>
+                  <td>cover.png</td>
+                  <td>Saya admin</td>
+                  <td>Jakarta</td>
+                  <td>www.github.com/4abduu</td>
+                  <td>Hapus Edit</td>
+
+              </tr><tr>
+                  <td>3</td>
+                  <td>Super Admin</td>
+                  <td>superadmin</td>
+                  <td>superadmin@gmail.com</td>
+                  <td>ac497cfaba23c4184cb03b97e8c51e0a</td>
+                  <td>default.jpg</td>
+                  <td>cover.png</td>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>Hapus Edit</td>
+
+              </tr>
+          </tbody>
+      </table>
       </div>
     </div>
   </div>
-  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/sidebarmenu.js"></script>
-  <script src="../assets/js/app.min.js"></script>
-  <script src="../assets/js/datatables.js"></script>
-  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+</div>
+</div>
+<script src="../../assets/admin/libs/jquery/dist/jquery.min.js"></script>
+<script src="../../assets/admin/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/admin/js/sidebarmenu.js"></script>
+<script src="../../assets/admin/js/app.min.js"></script>
+<script src="../../assets/admin/js/datatables.js"></script>
+<script src="../../assets/admin/libs/simplebar/dist/simplebar.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+      let table = new DataTable('#myTable');
+</script>
 </body>
-
 </html> 
